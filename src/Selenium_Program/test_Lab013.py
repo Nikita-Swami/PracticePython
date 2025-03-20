@@ -15,6 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def test_handling_alerts_accept():
     driver = webdriver.Chrome()
     driver.get("https://awesomeqa.com/practice.html")
+
     driver.maximize_window()
     time.sleep(5)
     gender_eles = driver.find_elements(By.XPATH, "//b[contains(text(),'Gen')]/parent::div/input")
